@@ -23,3 +23,4 @@ coin.addComponent(new Transform({
 
 coin.addComponent(new GLTFShape("models/pirate coin finall v2.gltf"))
 
+//
