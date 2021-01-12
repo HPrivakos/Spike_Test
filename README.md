@@ -11,4 +11,4 @@ Please include comments for each section of code so it will be easier for me to 
 
 It would be nice if the coin could rotate if the user had the NFT...but not required
 
-Ideally i would want to use this code to give access to NFT holders in Decentrland. 
+Ideally i would want to use this code to give certain perks to my NFT holders in Decentrland. 
