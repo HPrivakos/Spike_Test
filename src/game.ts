@@ -1,3 +1,5 @@
+import utils from "../node_modules/decentraland-ecs-utils/index"
+
 
 const _scene = new Entity('_scene')
 engine.addEntity(_scene)
@@ -7,19 +9,21 @@ const transform = new Transform({
   scale: new Vector3(1, 1, 1)
 })
 
-//entity
+// Demo scene with a coin
 
 const coin = new Entity('pirateCoinFinallV')
 engine.addEntity(coin)
 coin.setParent(_scene)
 
-
-coin.addComponentOrReplace(new Transform({
+coin.addComponent(new Transform({
   position: new Vector3(7, 0.4057798385620117, 8.555636405944824),
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(0.5, 0.5, 0.5)
 }))
 
+coin.addComponent(new GLTFShape("models/pirate coin finall v2.gltf"))
 
+// If user has the following nft in their wallet console.log (Approved)
+// Or else console.log (not approved)
 
-coin.addComponentOrReplace(new GLTFShape("models/pirate coin finall v2.gltf"))
+// It would be nice if the coin could rotate if the user had the NFT...but not required
